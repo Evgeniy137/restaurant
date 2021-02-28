@@ -51,19 +51,18 @@ const styles = () => {
 
 
 /* === work in js === */
-const scripts = () => {
+function scripts() {
     return src(["./src/js-components/**/*.js",
-                /* === "add URL plugins", === */
-])
-    .pipe(sourceMaps.init())
-    .pipe(concat('script.js'))
-    .pipe(rename({
-        suffix: '.min'
-    })) 
-    .pipe(uglify())
-    .pipe(sourceMaps.write('.'))
-    .pipe(dest('./build/js/'))
-    .pipe(browserSync.stream());
+    ])
+        .pipe(sourceMaps.init())
+        .pipe(concat('script.js'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(uglify())
+        .pipe(sourceMaps.write('.'))
+        .pipe(dest('./build/js/'))
+        .pipe(browserSync.stream());
 }
 /* === / work in js === */
 
@@ -116,7 +115,7 @@ const watching = () => {
         }
     });
     watch("./src/**/*.html", html);
-    watch("./src/sass-components/**.scss", styles);
+    watch("./src/sass-components/**/*.scss", styles);
     watch("./src/js-components/**.js", scripts);
     watch(["./src/media/image/**.png", "./src/media/image/**.jpg", "./src/media/image/**.jpeg"], image);
     watch("./src/media/svg/**.svg", svg);
@@ -139,23 +138,23 @@ const mainApp = () => {
 
 /* === tasks === */
 exports.html = html;
-exports.styles = styles
+exports.styles = styles;
 exports.scripts = scripts;
 exports.image = image;
 exports.svg = svg;
 exports.fonts = fonts; 
-
-exports.start = series(html, fonts, styles, scripts, image, svg );
+/* ================================> */
 // === Start project creation
+exports.start = series(html, fonts, styles, scripts, image, svg );
 // === Enter "gulp start"
-
-exports.watching = watching;  
+/* ================================> */
 // === Server start and file watching
+exports.watching = watching;  
 // === Enter "gulp watching"
-
-exports.mainApp = mainApp;
+/* ================================> */
 // === Create main version
+exports.mainApp = mainApp;
 // === Enter "gulp mainApp"
-
+/* ================================> */
 /* === /  tasks === */
 

@@ -1,0 +1,31 @@
+/* === font BUNNY === */
+@font-face {
+    font-family: 'Banny Round';
+    font-style : normal;
+    font-weight: normal;
+    src        : local('Banny Round'), url('../fonts/Banny-Round_1.woff') format('woff');
+    src        : local('Banny Light Round'), url('../fonts/Banny-Round_1.woff2') format('woff2');
+}
+
+/*=== / font BUNNY === */
+
+
+
+/* === font OpenSans === */
+@font-face {
+    font-family: 'OpenSans-Bold';
+    font-style : normal;
+    font-weight: 700;
+    src        : local('Banny Round'), url('../fonts/OpenSans-Bold.woff') format('woff');
+    src        : local('Banny Light Round'), url('../fonts/OpenSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    font-style : normal;
+    font-weight: 400;
+    src        : local('Banny Round'), url('../fonts/OpenSans-Regular.woff') format('woff');
+    src        : local('Banny Light Round'), url('../fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+/* === / font OpenSans === */
