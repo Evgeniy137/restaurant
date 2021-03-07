@@ -10,9 +10,12 @@
 
 
 
+/* === preloader === */
+@import "./section/_preloader.scss";
+/* === / preloader === */
 
 /* ===  === Header === */
-@import "./components/header";
+@import "./section/_header.scss";
 /* === / Header === */
 
 /* ===  About US === */

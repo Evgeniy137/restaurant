@@ -1,11 +1,12 @@
 const  { src, dest, parallel, series, watch } = require('gulp');
-const fileInclude = require('gulp-file-include');  // include HTML file
+const fileInclude = require('gulp-file-include');  // include  file
 const sass = require('gulp-sass'); // compiler SASS
 const concat = require('gulp-concat'); // concat CSS file
 const rename = require('gulp-rename'); // rename file, + suffix 'min'
 const autoprefixer = require('gulp-autoprefixer'); // add prefix CSS
 const cleanCss = require('gulp-clean-css') // minimization css
 const uglify = require('gulp-uglify-es').default; // minimization js
+const babel = require("gulp-babel"); // code transformation for older versions of browsers
 const sourceMaps = require('gulp-sourcemaps') // add file with debugging code
 const browserSync = require('browser-sync').create(); // auto reloaded browser
 const imagemin = require('gulp-imagemin') // minimization image
@@ -52,9 +53,16 @@ const styles = () => {
 
 /* === work in js === */
 function scripts() {
-    return src(["./src/js-components/**/*.js",
+    return src(["./src/js-components/main.js",
     ])
         .pipe(sourceMaps.init())
+        .pipe(fileInclude({
+            prefix: 'JS' ,
+            basepath: '@file'
+        }))
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat('script.js'))
         .pipe(rename({
             suffix: '.min'
@@ -116,7 +124,7 @@ const watching = () => {
     });
     watch("./src/**/*.html", html);
     watch("./src/sass-components/**/*.scss", styles);
-    watch("./src/js-components/**.js", scripts);
+    watch("./src/js-components/**/*.js", scripts);
     watch(["./src/media/image/**.png", "./src/media/image/**.jpg", "./src/media/image/**.jpeg"], image);
     watch("./src/media/svg/**.svg", svg);
     watch("./src/fonts/**.ttf", fonts);
