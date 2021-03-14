@@ -1,0 +1,54 @@
+/* === settings imports === */
+@import "./general/_normalize.scss";
+@import "./general/_reset.scss";
+@import "./general/_settings.scss";
+// ==========>
+@import "./general/_fonts.scss";
+@import "./general/_mixin.scss";
+@import "./general/_variables.scss";
+/* === / settings imports === */
+
+
+
+/* === preloader === */
+@import ".././components/preloader/_preloader.scss";
+/* === / preloader === */
+
+/* ===  === Header === */
+@import ".././components/header/_header.scss";
+/* === / Header === */
+
+/* ===  About US === */
+/* === / About US === */
+
+/* ===  Tean === */
+/* === / Tean === */
+
+/* ===  Booking === */
+/* === / Booking === */
+
+/* ===  Specialites === */
+/* === / Specialites === */
+
+/* === Menu === */
+/* === / Menu === */
+
+/* === Events === */
+/* === / Events === */
+
+/* === Galarie === */
+/* === / Galarie === */
+
+/* === Contact === */
+/* === / Contact === */
+
+/* === Maps === */
+/* === / Maps === */
+
+
+
+
+
+
+// ==========>
+@import "general/_media.scss";

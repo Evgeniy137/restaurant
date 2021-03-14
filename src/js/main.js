@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", (e) => {
 
 /* === Preloader === */
-JSinclude("./scripts/_preloader.js")
+JSinclude("../components/preloader/_preloader.js")
 /* === / Preloader === */
 
 /* === mobile button === */
-JSinclude("./scripts/_mobile-menu.js")
+JSinclude("../components/header/_header.js")
 /* === / mobile button === */
 })
 

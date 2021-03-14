@@ -1,21 +1,7 @@
-/* === settings imports === */
-@import "./general/_reset.scss";
-@import "./general/_normalize.scss";
-@import "./general/_settings.scss";
-// ==========>
-@import "./general/_fonts.scss";
-@import "./general/_mixin.scss";
-@import "./general/_variables.scss";
-/* === / settings imports === */
-
-
-
-/* === preloader === */
-@import "./section/_preloader.scss";
-/* === / preloader === */
+@media screen and (max-width: 902px) {
 
 /* ===  === Header === */
-@import "./section/_header.scss";
+@include heder-media;
 /* === / Header === */
 
 /* ===  About US === */
@@ -44,11 +30,4 @@
 
 /* === Maps === */
 /* === / Maps === */
-
-
-
-
-
-
-// ==========>
-@import "general/_media.scss";
+}

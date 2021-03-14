@@ -30,7 +30,7 @@ const html = () => {
 
 /* === work in style === */
 const styles = () => {
-    return src("./src/sass-components/**/*.scss")
+    return src("./src/style/main.scss")
     .pipe(sourceMaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
@@ -53,7 +53,7 @@ const styles = () => {
 
 /* === work in js === */
 function scripts() {
-    return src(["./src/js-components/main.js",
+    return src(["./src/js/main.js",
     ])
         .pipe(sourceMaps.init())
         .pipe(fileInclude({
@@ -123,8 +123,8 @@ const watching = () => {
         }
     });
     watch("./src/**/*.html", html);
-    watch("./src/sass-components/**/*.scss", styles);
-    watch("./src/js-components/**/*.js", scripts);
+    watch("./src/**/*.scss", styles);
+    watch("./src/**/*.js", scripts);
     watch(["./src/media/image/**.png", "./src/media/image/**.jpg", "./src/media/image/**.jpeg"], image);
     watch("./src/media/svg/**.svg", svg);
     watch("./src/fonts/**.ttf", fonts);
