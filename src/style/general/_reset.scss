@@ -94,6 +94,9 @@ button {
 button:focus {
     outline: none;
 }
+a {
+    color: inherit;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

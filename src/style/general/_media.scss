@@ -1,7 +1,8 @@
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 960px) {
 
 /* ===  === Header === */
-@include heder-media;
+@include header-media-960;
+@include header-media-720;
 /* === / Header === */
 
 /* ===  About US === */
@@ -30,4 +31,38 @@
 
 /* === Maps === */
 /* === / Maps === */
+}
+
+@media screen and (max-width: 720px) {
+/* ===  === Header === */
+@include header-media-720;
+/* === / Header === */
+
+/* ===  About US === */
+/* === / About US === */
+
+/* ===  Tean === */
+/* === / Tean === */
+
+/* ===  Booking === */
+/* === / Booking === */
+
+/* ===  Specialites === */
+/* === / Specialites === */
+
+/* === Menu === */
+/* === / Menu === */
+
+/* === Events === */
+/* === / Events === */
+
+/* === Galarie === */
+/* === / Galarie === */
+
+/* === Contact === */
+/* === / Contact === */
+
+/* === Maps === */
+/* === / Maps === */
+
 }

@@ -1,0 +1,64 @@
+.about-us {
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+
+    &__text {
+        flex      : 50%;
+        margin-top: 215px;
+        text-align: center;
+    }
+
+    &__title {
+        position: relative;
+        @include font-bunny;
+        font-size: $fontsize_lg;
+
+        &::before {
+            @include yellow-line;
+        }
+    }
+
+    &__sub-title {
+        font-size  : $fontsize_md;
+        color      : $color_black;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top : 30px;
+    }
+
+    &__description {
+        @include font-opensans-400;
+        font-size    : $fontsize_sm;
+        color        : $color_black;
+        line-height  : 24px;
+        margin-top   : 30px;
+        margin-bottom: 215px;
+    }
+
+
+    &__image {
+        /* position: relative; */
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        flex           : 50%;
+        text-align     : center;
+
+        &--card {
+            position: relative;
+
+            & img {
+                width   : 475px;
+                height  : 475px;
+            } 
+
+            &::before {
+                @include yellow-figure;
+                right: -15%;
+                transform:translateY(50%);
+            }
+        }
+    }
+}
