@@ -1,0 +1,51 @@
+.team {
+    background-image: url("../image/team-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.team-heading {
+    font-size: $fontsize_es;
+    color: $color_white;
+    text-align: center;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    padding: 40px 0;
+}
+
+
+//style slide
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__image {
+        flex: 1;
+        position: relative;
+        &::before {
+            transform: translateY(50%);
+            @include yellow-figure;
+        }
+        & img {
+            @include image-size;
+        }
+    }
+    &__text {
+        flex: 1;
+        color: $color_white;
+        text-align: center;
+        margin-top: 200px;
+    } 
+    @include text-styeles; //// style for title, sub-title, description
+}
+
+//style slider
+.swiper-slide {
+    display: flex;
+    
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }

@@ -54,6 +54,7 @@ const styles = () => {
 /* === work in js === */
 function scripts() {
     return src(["./src/js/main.js",
+                "./node_modules/swiper/swiper-bundle.js"
     ])
         .pipe(sourceMaps.init())
         .pipe(fileInclude({

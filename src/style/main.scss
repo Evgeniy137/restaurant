@@ -8,6 +8,11 @@
 @import "./general/_variables.scss";
 /* === / settings imports === */
 
+/* === plugins === */
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+/* === / plugins === */
+
 
 
 /* === preloader === */
@@ -23,6 +28,7 @@
 /* === / About US === */
 
 /* ===  Tean === */
+@import ".././components/team/_team.scss";
 /* === / Tean === */
 
 /* ===  Booking === */

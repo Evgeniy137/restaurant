@@ -1,16 +1,18 @@
+
 document.addEventListener("DOMContentLoaded", (e) => {
 
 /* === Preloader === */
 JSinclude("../components/preloader/_preloader.js")
 /* === / Preloader === */
 
-/* === mobile button === */
+/* === header === */
 JSinclude("../components/header/_header.js")
-/* === / mobile button === */
+/* === / header === */
 
-
+/* === team slider === */
+JSinclude("../components/team/_team.js")
 })
-
+/* === / team slider === */
 
 
 

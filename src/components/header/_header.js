@@ -11,5 +11,20 @@ mobileBtn.addEventListener("click", (e) => {
         document.querySelector('body').style.overflow ="auto"
     }
 })
-
 /* === / mobile menu === */
+
+
+/* === btn down === */
+const linkBtnDown = document.querySelector('.link-down')
+
+linkBtnDown.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const scrollPoint = linkBtnDown.getAttribute('href')
+
+    document.querySelector(scrollPoint).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+})
+/* === / btn down === */
