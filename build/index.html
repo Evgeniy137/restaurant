@@ -147,30 +147,12 @@
 <!-- === / About US === -->
 
 <!-- ===  Team === -->
-<section class="wrapper team">
+<section class="wrapper team ">
     <section class="wrapper__container">
 <div class="team-heading">OUR TEAM</div>
 <div class="team-container">
-    <!-- <div class="team-container__image">
-        <img src="./image/team-img.png" alt="team">
-    </div>
-    <div class="team-container__text">
-        <div class="team-container__title">MASTER CHEF</div>
-        <div class="team-container__sub-title">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Duis at velit maximus, 
-            molestie est a, tempor magna.
-        </div>
-        <div class="team-container__description">Integer ullamcorper neque eu 
-            purus euismod, ac faucibus mauris posuere. 
-            Morbi non ultrices ligula. Sed dictum, 
-            enim sed ullamcorper feugiat, dui odio vehicula eros, 
-            a sollicitudin lorem quam nec sem. Mauris tincidunt 
-            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
-    </div> -->
-
-
-
-    <div class="swiper-container sl1 ">
+    <!-- === slider === -->
+    <div class="swiper-container sl1der-team">
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -195,30 +177,32 @@
 
             <div class="swiper-slide">
                 <div class="team-container__image">
-                    <img src="./image/about-img.png" alt="team">
+                    <img src="./image/team-img1.png" alt="team">
                 </div>
                 <div class="team-container__text">
-                    <div class="team-container__title">MASTER АААААААААААААААА</div>
+                    <div class="team-container__title">SOUS CHEF</div>
                     <div class="team-container__sub-title">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Duis at velit maxissssssssssmus,
+                        consectetur adipiscing elit. Duis at velit maximus,
+                        molestie est a, tempor magna.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Duis at velit maximus,
                         molestie est a, tempor magna.
+                        
                     </div>
                     <div class="team-container__description">Integer ullamcorper neque eu
                         purus euismod, ac faucibus mauris posuere.
                         Morbi non ultrices ligula. Sed dictum,
                         enim sed ullamcorper feugiat, dui odio vehicula eros,
-                        a sollicitudin lorem quam nec sem. Mauris tincidunt
-                        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                        a sollicitudin lorem quam nec sem. </div>
                 </div>
             </div>
 
 
             <div class="swiper-slide">
                 <div class="team-container__image">
-                    <img src="./image/team-img.png" alt="team">
+                    <img src="./image/team-img2.png" alt="team">
                 </div>
                 <div class="team-container__text">
-                    <div class="team-container__title">MASTER CHEF</div>
+                    <div class="team-container__title">CONFECTIONER</div>
                     <div class="team-container__sub-title">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Duis at velit maximus,
                         molestie est a, tempor magna.
@@ -232,17 +216,75 @@
                 </div>
             </div>
 
+            <div class="swiper-slide">
+                <div class="team-container__image">
+                    <img src="./image/team-img3.png" alt="team">
+                </div>
+                <div class="team-container__text">
+                    <div class="team-container__title">FISH MEAT VEGETABLE CHEF </div>
+                    <div class="team-container__sub-title">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Duis at velit maximus,
+                        molestie est a, tempor magna.Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Duis at velit maximus,
+                        molestie est a, tempor magna.
+                    </div>
+                    <div class="team-container__description">Integer ullamcorper neque eu
+                        purus euismod, ac faucibus mauris posuere.
+                        Morbi non ultrices ligula. Sed dictum,
+                        enim sed ullamcorper feugiat, dui odio vehicula eros,
+                        a sollicitudin lorem quam nec sem. </div>
+                </div>
+            </div>
+
         </div>
+        <div class="swiper-pagination"></div>
     </div>
+    <!-- === / slider === -->
 </div>
     </section>
 </section>
 <!-- === / Team === -->
 
 <!-- ===  Booking === -->
-<section class="wrapper">
+<section class="wrapper booking-wrapper">
     <section class="wrapper__container">
-        
+<div class="booking">
+    <div class="booking__container">
+        <div class="booking__form form">
+            <div class="form__title">BOOK A TABLE</div>
+            <form id="myForm" class="form__item" name="form-booking">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="Email" name="Email">
+                <input type="tel" placeholder="Phone" name="Phone">
+                <input type="list"  placeholder="People" name="People" list="People">
+                <datalist id="People">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>6</option>
+                    <option>5</option>
+                    <option>7</option>
+                    <option>8</option>
+                </datalist> 
+                <input id="date" type="text" placeholder="Date" name="Date">
+                <input id="time"  type="text" placeholder="Time" name="Time">
+            </form>
+            <div class="form__button">
+                <button class="button-sub form__button--booking">
+                    BOOK NOW
+                </button>
+            </div>
+        </div>
+        <div class="booking__image">
+            <img src="./image/booking-img.png" alt="booking">
+        </div>
+    </div>
+    <div class="booking__contacts">
+        Mon - Fri: 8PM - 10PM,        
+        Sat - Sun: 8PM - 3AM,          
+        Phone: +40 729 131 637/+40 726 458 782 
+    </div>
+</div>
     </section>
 </section>
 <!-- === / Booking === -->

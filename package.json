@@ -4,6 +4,7 @@
   "description": "Business card website for a restaurant",
   "main": "gulpfile.js",
   "dependencies": {
+    "flatpickr": "^4.6.9",
     "swiper": "^6.5.0"
   },
   "devDependencies": {

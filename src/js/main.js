@@ -11,8 +11,13 @@ JSinclude("../components/header/_header.js")
 
 /* === team slider === */
 JSinclude("../components/team/_team.js")
-})
+
 /* === / team slider === */
 
+/* === booking === */
+JSinclude("../components/booking/_booking.js")
 
+/* === / bookingr === */
+
+})
 

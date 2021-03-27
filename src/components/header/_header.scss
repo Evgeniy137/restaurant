@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
-    height             : 100vh;
+    min-height             : 100vh;
 }
 
 .nav {
@@ -191,6 +191,7 @@
 
 
 .header-content {
+    min-height: 100vh;
     position       : relative;
     display        : flex;
     justify-content: space-between;
@@ -213,7 +214,7 @@
     .hed-item {
         flex      : 5;
         text-align: center;
-        margin-top: 225px;
+        margin-top: 250px;
 
         &__sub-title {
             letter-spacing: 0.5em;
@@ -237,7 +238,7 @@
             display        : flex;
             justify-content: space-evenly;
             flex-wrap      : wrap;
-            /* margin-top  : 45px; */
+        
         }
 
         .header-buttons {
@@ -273,7 +274,7 @@
 
         &__down-btn {
             position        : relative;
-            margin          : 82px auto;
+            margin          : 150px auto;
             width           : 60px;
             height          : 60px;
             border          : 1px solid $color_grey;

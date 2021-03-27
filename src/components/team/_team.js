@@ -1,4 +1,4 @@
-const swiper = new Swiper('.sl1', {
+const swiper = new Swiper('.sl1der-team', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -9,4 +9,8 @@ const swiper = new Swiper('.sl1', {
     autoplay: {
         delay: 5000,
     },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
 })

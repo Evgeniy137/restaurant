@@ -34,18 +34,46 @@
         flex: 1;
         color: $color_white;
         text-align: center;
-        margin-top: 200px;
-    } 
+        align-self: center;
+        
+    }
+    &__description {
+        margin: 0;
+    }
     @include text-styeles; //// style for title, sub-title, description
 }
 
 //style slider
 .swiper-slide {
     display: flex;
-    
+    margin-bottom: 100px;
 }
 
 .swiper-container {
     width: 100%;
-    height: 100%;
-  }
+    height: 100%;    
+}
+
+.swiper-pagination {
+    bottom: 30px;
+}
+
+//media queris
+
+@mixin tean-media-960 {
+    .swiper-slide {
+        flex-direction: column;
+    }
+    .team-container__image {
+        text-align: center;
+        align-items: center;
+    }
+    .team-container__image::before {
+        display: none;
+    }
+    .team-container__image img {
+        width: 70%;
+        height: 70%;
+    }
+    
+}
