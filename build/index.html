@@ -13,11 +13,11 @@
 
 
 <!-- ===  preloader === -->
-<div class=" start preloader">
+<!-- <div class=" start preloader">
     <div class="preloader__content">
         <div class="preloader__content-item"></div>
     </div>
-</div>
+</div> -->
 <!-- === / preloader === -->
 
 
@@ -246,17 +246,17 @@
 <!-- === / Team === -->
 
 <!-- ===  Booking === -->
-<section class="wrapper booking-wrapper">
+<section class="wrapper booking-wrapper ">
     <section class="wrapper__container">
 <div class="booking">
     <div class="booking__container">
         <div class="booking__form form">
             <div class="form__title">BOOK A TABLE</div>
-            <form id="myForm" class="form__item" name="form-booking">
-                <input type="text" placeholder="name" name="name">
+            <form id="form-booking" name="form-booking">
+                <input type="text" placeholder="Name" name="Name">
                 <input type="email" placeholder="Email" name="Email">
                 <input type="tel" placeholder="Phone" name="Phone">
-                <input type="list"  placeholder="People" name="People" list="People">
+                <input type="list" placeholder="People" name="People" list="People">
                 <datalist id="People">
                     <option>1</option>
                     <option>2</option>
@@ -265,9 +265,9 @@
                     <option>5</option>
                     <option>7</option>
                     <option>8</option>
-                </datalist> 
+                </datalist>
                 <input id="date" type="text" placeholder="Date" name="Date">
-                <input id="time"  type="text" placeholder="Time" name="Time">
+                <input id="time" type="text" placeholder="Time" name="Time">
             </form>
             <div class="form__button">
                 <button class="button-sub form__button--booking">
@@ -280,9 +280,35 @@
         </div>
     </div>
     <div class="booking__contacts">
-        Mon - Fri: 8PM - 10PM,        
-        Sat - Sun: 8PM - 3AM,          
-        Phone: +40 729 131 637/+40 726 458 782 
+        Mon - Fri: 8PM - 10PM,
+        Sat - Sun: 8PM - 3AM,
+        Phone: +40 729 131 637/+40 726 458 782
+    </div>
+</div>
+
+<div class="booking-popup">
+    <div class="booking-popup__container booking-popup__container-active ">
+        <div class="booking-popup__container-title">
+            DONE
+        </div>
+        <div class="booking-popup__container-text">
+            <div class="booking-popup__property">
+                <ul>
+                    <li>name</li>
+                    <li>mail</li>
+                    <li>phone</li>
+                    <li>people</li>
+                    <li>data</li>
+                    <li>time</li>
+                </ul>
+            </div>
+            <div class="booking-popup__key">
+
+            </div>
+        </div>
+    </div>
+    <div class="booking-popup__close">
+        dddddd
     </div>
 </div>
     </section>

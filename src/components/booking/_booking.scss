@@ -1,6 +1,8 @@
 .booking-wrapper {
     background: $color_white;
+    position: relative;
 }
+
 
 .booking {
     padding-top: 100px;
@@ -68,3 +70,53 @@
         opacity: 0.5;
     }
 }
+
+/* === booking popup === */
+.popup-active{
+    display: block;
+}
+
+.booking-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.9);
+    z-index: 1000;
+    transition: 1s;
+    &__container {
+        width: 50%;
+        height: 50%;
+        background:$color_grey;
+        margin: auto;
+        transform: translateY(50%);
+        border-radius: 10px;
+        transition: 1s;
+    }
+    &__container-title {
+        text-align: center;
+        @include font-bunny;
+        font-size: $fontsize_lg;
+        padding-top: 20px;
+    }
+
+    &__container-text {
+        display:flex;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    &__property {
+        color: red;
+    }
+    &__key {
+        color: red;
+    }
+
+}
+
+.popup-active{
+    display: block;
+}
+/* === / booking popup === */
