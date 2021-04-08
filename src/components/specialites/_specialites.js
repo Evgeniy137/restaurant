@@ -1,4 +1,4 @@
-const swiperTeam = new Swiper('.sl1der-team', {
+const swiperSpecialites = new Swiper('.slider-specialites', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,

@@ -16,8 +16,14 @@ JSinclude("../components/team/_team.js")
 
 /* === booking === */
 JSinclude("../components/booking/_booking.js")
-
 /* === / bookingr === */
 
+/* ===  Specialites === */
+JSinclude("../components/specialites/_specialites.js")
+/* === / Specialites === */
+
+/* ===  Specialites === */
+JSinclude("../components/menu/_menu.js")
+/* === / Specialites === */
 })
 

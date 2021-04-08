@@ -1,0 +1,45 @@
+.specialites {
+    background-image   : url("../image/specialtys-bg.png");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+
+}
+
+.specialites-heading {
+    font-size     : $fontsize_es;
+    line-height   : 14px;
+    padding       : 40px 0;
+    text-align    : center;
+    color         : $color_white;
+    letter-spacing: 0.5em;
+}
+
+.specialites-cotainer {
+    &__image {
+        flex      : 1;
+        text-align: center;
+        position  : relative;
+
+        &::before {
+            @include yellow-figure;
+            left     : 0;
+            transform: translateY(50%);
+        }
+
+        & img {
+            @include image-size;
+
+        }
+    }
+
+    &__text {
+        flex: 1;
+        text-align: center;
+        align-self: center;
+        color: $color_white;
+    
+    }
+    @include text-styeles;
+}
+
