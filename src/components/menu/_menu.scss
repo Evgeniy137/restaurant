@@ -1,6 +1,7 @@
 .menu {
     min-height: 100vh;
     text-align: center;
+    background-color: $color-white;
 }
 
 .menu__title {
@@ -20,4 +21,61 @@
     font-weight: bold;
     line-height: 28px;
     margin-top : 30px;
+}
+//tabs
+.menu__container {
+    margin-top: 50px;
+}
+//tabs button
+.menu__tabs-name {
+    display: flex;
+    justify-content: center;
+    & :last-child {
+        border-right: 1px solid $color_black;
+    }
+}
+.tabs__button {
+    background: none;
+    font-size: $fontsize_es;
+    line-height: 18px;
+    letter-spacing: 0em;
+    width: 120px;
+    height: 50px;
+    border-left: 1px solid $color_black;
+}
+.menu__tabs-item {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.tabs__text {
+    border-left: 1px solid $color_black;
+    &:last-child {
+        border-right: 1px solid $color_black;
+    }
+    ul {
+        li {
+            @include font-bunny;
+            display: flex;
+            h3 {
+                font-size: $fontsize_md;
+            }
+            h4 {
+                @include font-opensans-400;
+                font-size: $fontsize_es;
+            }
+        }
+    }
+}
+
+.tabs__food {
+    text-align: left;
+    padding-right: 30px;
+    h3 {
+        font-size: $fontsize_md;
+    }
+    h4 {
+        @include font-opensans-400;
+        font-size: $fontsize_es;
+    }
 }
