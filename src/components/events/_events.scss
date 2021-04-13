@@ -1,0 +1,85 @@
+.events {
+    background-image   : url("../image/specialtys-bg.png");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    font-size          : $fontsize_es;
+    color              : $color_white;
+    text-align         : center;
+}
+
+.events__heading {
+    line-height   : 14px;
+    letter-spacing: 0.5em;
+    padding       : 50px 0;
+}
+
+.events__images {
+    display: flex;
+}
+
+.events__weddnes,
+.events__corporate {
+    flex    : 1;
+    position: relative;
+
+    &::before {
+        transform: translateY(50%);
+        @include yellow-figure;
+    }
+}
+
+.events__weddnes {
+    &::before {
+        left: 0;
+    }
+}
+
+.events__corporate {
+    &::before {
+        right: 0;
+    }
+}
+
+.events__corporate-image,
+.events__weddnes-image {
+    @include image-size;
+    &:hover {
+        opacity: .3;
+    }
+}
+
+.events__corporate-text,
+.events__weddnes-text {
+    position    : absolute;
+    background  : red;
+    top         : 0;
+    bottom      : 0;
+    writing-mode: vertical-rl;
+    @include font-bunny;
+    font-size     : 24px;
+    line-height   : 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 30px;
+    background: $color_black;
+}
+
+.events__corporate-text {
+    transform: rotate(180deg);
+    right: 75%;
+}
+
+.events__weddnes-text {
+    left: 75% ;
+}
+
+
+
+
+
+.events__description {
+    opacity    : .5;
+    line-height: 12px;
+    padding    : 50px 0;
+}

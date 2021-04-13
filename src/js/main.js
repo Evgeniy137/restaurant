@@ -25,5 +25,13 @@ JSinclude("../components/specialites/_specialites.js")
 /* ===  Specialites === */
 JSinclude("../components/menu/_menu.js")
 /* === / Specialites === */
+
+/* === Events === */
+JSinclude("../components/events/_events.js")
+/* === / Events === */
+
+
 })
+
+
 
