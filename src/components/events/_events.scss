@@ -14,6 +14,8 @@
     padding       : 50px 0;
 }
 
+
+// block images
 .events__images {
     display: flex;
 }
@@ -22,10 +24,13 @@
 .events__corporate {
     flex    : 1;
     position: relative;
+    overflow: hidden;
 
     &::before {
         transform: translateY(50%);
         @include yellow-figure;
+        z-index: 2;
+        transition: all ease-in-out .5s;
     }
 }
 
@@ -40,12 +45,27 @@
         right: 0;
     }
 }
+.events__corporate--active {
+    &::before {
+        /* transform: translateX(50px); */
+        right: -100%;
+    }
+}
+// active class with hover
+
 
 .events__corporate-image,
 .events__weddnes-image {
+    background-image: url("../image/events-corporate.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
     @include image-size;
-    &:hover {
-        opacity: .3;
+    margin: 0 auto;
+    overflow: hidden;
+    &:hover .events__corporate-hover {
+        transform: translateY(0);
     }
 }
 
@@ -67,17 +87,41 @@
 
 .events__corporate-text {
     transform: rotate(180deg);
-    right: 75%;
+    left: 0;
 }
 
 .events__weddnes-text {
-    left: 75% ;
+    right: 0;
+}
+.events__corporate-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+    transition: .5s;
+    transform: translateY(-100%);
+}
+.events__corporate-button {
+    font-size: 24px;
+    margin:auto;
+    transform: translateY(200px);
+    border-radius: 5px;
+    color: $color_white;
+    background: $color_yelow;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+        color: $color_black;
+    }
 }
 
+.event__active-hover {
+    transform: translateY(0);
+}
 
-
-
-
+// block description
 .events__description {
     opacity    : .5;
     line-height: 12px;
