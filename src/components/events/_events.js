@@ -1,13 +1,20 @@
-const eventsImage = document.querySelector('.events__corporate-image')
+const eventsCorporateImage = document.querySelector(".events__corporate-image")
+const eventsWeddnesImage = document.querySelector(".events__weddnes-image")
 
-let eventsContainerImage =document.querySelector(".events__corporate")
+const eventsCorporateWrapper = document.querySelector(".events__corporate")
+const eventsWeddnesWrapper = document.querySelector(".events__weddnes")
 
-eventsImage.addEventListener("mouseover", () => {
-    
-    eventsContainerImage.classList.add("events__corporate--active")
+eventsCorporateImage.addEventListener("mouseover", function() {
+    eventsCorporateWrapper.classList.add("corporate__hover-active")
+})
+eventsCorporateImage.addEventListener("mouseout", function() {
+    eventsCorporateWrapper.classList.remove("corporate__hover-active")
 })
 
-eventsImage.addEventListener("mouseout", () => {
-    eventsContainerImage.classList.remove("events__corporate--active")
-})
 
+eventsWeddnesImage.addEventListener("mouseover", function() {
+    eventsWeddnesWrapper.classList.add("weddnes__hover-active")
+})
+eventsWeddnesImage.addEventListener("mouseout", function() {
+    eventsWeddnesWrapper.classList.remove("weddnes__hover-active")
+})

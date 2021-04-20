@@ -30,6 +30,9 @@ JSinclude("../components/menu/_menu.js")
 JSinclude("../components/events/_events.js")
 /* === / Events === */
 
+/* === Gallery === */
+JSinclude("../components/gallery/_gallery.js")
+/* === / Gallery === */
 
 })
 

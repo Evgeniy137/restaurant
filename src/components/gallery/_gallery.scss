@@ -1,0 +1,41 @@
+/* === popup === */
+.gallery {
+    position: relative;
+    &__popup-wrapper {
+        /* display: none; */
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.9);
+        z-index: 5;
+        &--active {
+            display: block;
+            visibility: visible;
+        }
+    }
+    &__popup-slider {
+        width: 375px;
+        height: 375px;
+    }
+    &__popup-pagination{
+        bottom: -100px;
+    }
+}
+
+/* === / popup === */
+
+
+.gallery-slide {
+    cursor: pointer;
+    margin-bottom: 0;
+    & img {
+        width: 100%;
+        height: auto;
+    }
+    & :hover {
+        border: 2px solid $color-yelow;
+    }
+}

@@ -45,13 +45,18 @@
         right: 0;
     }
 }
-.events__corporate--active {
+
+// active class with hover
+.corporate__hover-active {
     &::before {
-        /* transform: translateX(50px); */
         right: -100%;
     }
 }
-// active class with hover
+.weddnes__hover-active {
+    &::before {
+        left: -100%;
+    }
+}
 
 
 .events__corporate-image,
@@ -65,6 +70,9 @@
     margin: 0 auto;
     overflow: hidden;
     &:hover .events__corporate-hover {
+        transform: translateY(0);
+    }
+    &:hover .events__weddnes-hover {
         transform: translateY(0);
     }
 }
@@ -93,7 +101,8 @@
 .events__weddnes-text {
     right: 0;
 }
-.events__corporate-hover {
+.events__corporate-hover,
+.events__weddnes-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -103,7 +112,8 @@
     transition: .5s;
     transform: translateY(-100%);
 }
-.events__corporate-button {
+.events__corporate-button,
+.events__weddnes-button{
     font-size: 24px;
     margin:auto;
     transform: translateY(200px);
@@ -117,9 +127,7 @@
     }
 }
 
-.event__active-hover {
-    transform: translateY(0);
-}
+
 
 // block description
 .events__description {
