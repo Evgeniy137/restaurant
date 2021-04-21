@@ -1,0 +1,97 @@
+.contact {
+    text-align: center;
+    background: $color_white;
+
+    &__title {
+        position : relative;
+        font-size: $fontsize_lg;
+        @include font-bunny;
+        padding-top: 100px;
+
+        &::before {
+            @include yellow-line;
+        }
+    }
+
+    &__sub-title {
+        font-weight: bold;
+        margin     : 50px auto;
+        width      : 40%;
+    }
+
+    //form
+    &__form {
+
+        display        : flex;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+        padding-bottom: 100px;
+
+        & input {
+            margin    : 5px 5px;
+            background: $color_grey;
+        }
+
+        &--name {
+            flex: 20%;
+
+        }
+
+        &--email {
+            flex: 20%;
+
+        }
+
+        &--phone {
+            flex: 20%;
+        }
+
+        &--message {
+            flex  : 100%;
+            height: 120px;
+        }
+
+        &--icon {
+            display        : flex;
+            justify-content: space-between;
+            align-items: center;
+            margin         : 5px 5px;
+
+            & svg {
+                width : 20px;
+                height: 20px;
+                color : $color_yelow;
+                margin-right: 10px;
+            }
+
+            & p {
+                font-weight: bold;
+                font-size  : $fontsize_es;
+                opacity    : .5;
+            }
+        }
+
+        &--button-sub {
+            width: 640px;
+            height: 60px;
+            margin: 5px 5px;
+            position     : relative;
+            font-size    : $fontsize_es;
+            border-radius: 5px;
+            background   : $color_yelow;
+            transition   : .5s;
+            color        : $color_white;
+            z-index      : 2;
+            cursor       : pointer;
+
+            &:hover {
+                color: $color_black;
+            }
+
+            &:active {
+                background: $color_grey;
+            }
+        }
+
+    }
+}

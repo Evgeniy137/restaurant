@@ -34,6 +34,11 @@ JSinclude("../components/events/_events.js")
 JSinclude("../components/gallery/_gallery.js")
 /* === / Gallery === */
 
+/* === contact === */
+JSinclude("../components/contact/_contact.js")
+/* === / contact === */
+
+
 })
 
 
