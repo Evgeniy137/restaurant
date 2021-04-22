@@ -75,22 +75,7 @@
             width: 640px;
             height: 60px;
             margin: 5px 5px;
-            position     : relative;
-            font-size    : $fontsize_es;
-            border-radius: 5px;
-            background   : $color_yelow;
-            transition   : .5s;
-            color        : $color_white;
-            z-index      : 2;
-            cursor       : pointer;
-
-            &:hover {
-                color: $color_black;
-            }
-
-            &:active {
-                background: $color_grey;
-            }
+            @include button-sub;
         }
 
     }

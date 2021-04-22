@@ -34,16 +34,18 @@
             input {
                 width: 45%;
                 margin: 5px 0;
+                &:invalid {
+                    background: #E3262C;
+                    color: $color_white;
+                }
             }
         }
 
         &__button {
-            &--booking {
                 margin-top: 10px;
                 width: 100%;
                 height: 60px;
-            }
-            @include button-sub;
+                @include button-sub;
         }
     }
     
@@ -88,35 +90,69 @@
     transition: 1s;
     &__container {
         width: 50%;
-        height: 50%;
-        background:$color_grey;
+        /* height: 50%; */
+        background:$color_yelow;
         margin: auto;
         transform: translateY(50%);
         border-radius: 10px;
         transition: 1s;
     }
     &__container-title {
+        position: relative;
         text-align: center;
         @include font-bunny;
         font-size: $fontsize_lg;
         padding-top: 20px;
+        &::before {
+            @include yellow-line;
+        }
     }
 
     &__container-text {
+        @include font-opensans-400;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         margin: auto;
+        font-size: $fontsize_lg;
+        color: $color_black;
+        background: $color_grey;
+        padding: 20px 0;
     }
     &__property {
-        color: red;
+        text-align: end;
+        
+        ul {
+            li {
+                font-size: $fontsize_sm;
+                font-weight: bold;
+                padding-top: 20px;
+                margin-right: 100px;
+            }
+        }
     }
     &__key {
-        color: red;
+        /* margin-left: 50%; */
+        ul{
+            li {
+                position: relative;
+                @include font-bunny;
+                font-weight: bold;
+                padding-right: 20px;
+                &::before {
+                    @include yellow-line;
+                    top: 50%;
+                    left: -50px;
+                }
+            }
+        }
     }
-
+    &__banner-done {
+        text-align: center;
+        @include font-bunny;
+        font-size: $fontsize_lg;
+        font-weight: bold;
+        padding: 15px 0;
+    }
 }
 
-.popup-active{
-    display: block;
-}
 /* === / booking popup === */

@@ -16,7 +16,6 @@
 
 /* === button === */
 @mixin button-sub {
-    .button-sub {
         position     : relative;
         font-size    : $fontsize_es;
         border-radius: 5px;
@@ -33,7 +32,6 @@
         &:active {
             background: $color_grey;
         }
-    }
 }
 
 /* === / button === */

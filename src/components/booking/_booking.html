@@ -5,7 +5,7 @@
             <form id="form-booking" name="form-booking">
                 <input type="text" placeholder="Name" name="Name">
                 <input type="email" placeholder="Email" name="Email">
-                <input type="tel" placeholder="Phone" name="Phone">
+                <input type="tel" pattern="[0-9]{3}"  placeholder="Phone" name="Phone">
                 <input type="list" placeholder="People" name="People" list="People">
                 <datalist id="People">
                     <option>1</option>
@@ -18,12 +18,10 @@
                 </datalist>
                 <input id="date" type="text" placeholder="Date" name="Date">
                 <input id="time" type="text" placeholder="Time" name="Time">
-            </form>
-            <div class="form__button">
-                <button class="button-sub form__button--booking">
+                <button class="form__button button-sub form__button--booking">
                     BOOK NOW
                 </button>
-            </div>
+            </form>
         </div>
         <div class="booking__image">
             <img src="./image/booking-img.png" alt="booking">
@@ -39,22 +37,25 @@
 <div class="booking-popup">
     <div class="booking-popup__container booking-popup__container-active ">
         <div class="booking-popup__container-title">
-            DONE
+            BOOK A TABLE
         </div>
         <div class="booking-popup__container-text">
             <div class="booking-popup__property">
                 <ul>
-                    <li>name</li>
-                    <li>mail</li>
-                    <li>phone</li>
-                    <li>people</li>
-                    <li>data</li>
-                    <li>time</li>
+                    <li>Name:</li>
+                    <li>Mail:</li>
+                    <li>Phone:</li>
+                    <li>People:</li>
+                    <li>Date:</li>
+                    <li>Time:</li>
                 </ul>
             </div>
             <div class="booking-popup__key">
 
             </div>
+        </div>
+        <div class="booking-popup__banner-done">
+            THE RESERVATION DONE
         </div>
     </div>
     <div class="booking-popup__close">
