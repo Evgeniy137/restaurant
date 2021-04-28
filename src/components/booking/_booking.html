@@ -1,38 +1,37 @@
-<div class="booking">
-    <div class="booking__container">
-        <div class="booking__form form">
-            <div class="form__title">BOOK A TABLE</div>
-            <form id="form-booking" name="form-booking">
-                <input type="text" placeholder="Name" name="Name">
-                <input type="email" placeholder="Email" name="Email">
-                <input type="tel" pattern="[0-9]{3}"  placeholder="Phone" name="Phone">
-                <input type="list" placeholder="People" name="People" list="People">
-                <datalist id="People">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>6</option>
-                    <option>5</option>
-                    <option>7</option>
-                    <option>8</option>
-                </datalist>
-                <input id="date" type="text" placeholder="Date" name="Date">
-                <input id="time" type="text" placeholder="Time" name="Time">
-                <button class="form__button button-sub form__button--booking">
-                    BOOK NOW
-                </button>
-            </form>
-        </div>
-        <div class="booking__image">
-            <img src="./image/booking-img.png" alt="booking">
-        </div>
+<div class="booking__container">
+    <div class="booking__form">
+        <div class="form__title">BOOK A TABLE</div>
+        <form class="form__item" id="form-booking" name="form-booking">
+            <input required type="text" pattern="[A-Za-z]" placeholder="Enter your name" name="Name">
+            <input required type="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Enter your email" name="Email">
+            <input required type="tel" value="+100" pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" placeholder="Enter your phone" name="Phone">
+            <input required type="list" placeholder="Enter the number of person" name="People" list="People">
+            <datalist id="People">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>6</option>
+                <option>5</option>
+                <option>7</option>
+                <option>8</option>
+            </datalist>
+            <input required id="date" type="text" placeholder="Date" name="Date">
+            <input required id="time" type="text" placeholder="Time" name="Time">
+            <button class="form__item-button ">
+                BOOK NOW
+            </button>
+        </form>
     </div>
-    <div class="booking__contacts">
-        Mon - Fri: 8PM - 10PM,
-        Sat - Sun: 8PM - 3AM,
-        Phone: +40 729 131 637/+40 726 458 782
+    <div class="booking__image">
+        <img src="./image/booking-img.png" alt="booking">
     </div>
 </div>
+<div class="booking__contacts">
+    Mon - Fri: 8PM - 10PM,
+    Sat - Sun: 8PM - 3AM,
+    Phone: +40 729 131 637/+40 726 458 782
+</div>
+
 
 <div class="booking-popup">
     <div class="booking-popup__container booking-popup__container-active ">
