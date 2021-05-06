@@ -26,18 +26,16 @@
 
 //tabs
 .menu__container {
+    position: relative;
+    overflow: hidden;
     margin-top: 50px;
 }
 
 //tabs button
 .menu__tabs-name {
-    display        : flex;
-    justify-content: center;
-
-    & :last-child {
-        border-right: 1px solid $color_black;
-    }
-
+    display           : none;
+    /* display        : flex; */
+    justify-content   : center;
 }
 
 .tabs__button {
@@ -47,12 +45,14 @@
     letter-spacing: 0em;
     width         : 120px;
     height        : 50px;
-    border-left   : 1px solid $color_black;
+    /* border     : 1px solid $color_black; */
     cursor        : pointer;
 
     &:hover {
-        color: $color_yelow;
+        color : $color_yelow;
+        border: 1px solid $color_yelow;
     }
+
     // active class after click
     &--active {
         color     : $color_white;
@@ -66,12 +66,51 @@
     }
 }
 
+/* === tabs mobile ===  */
+.menu__tabs-mobile {
+    /* position: relative; */
+    display: block;
+    /* background: #000; */
+    overflow: hidden;
+}
+.tabs__open-mobile {
+    background    : none;
+        font-size     : $fontsize_es;
+        line-height   : 18px;
+        letter-spacing: 0em;
+        width         : 120px;
+        height        : 50px;
+        
+        cursor        : pointer;
+}
+.tabs__button-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: .6s;
+    top: 50px;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    border-radius: 5px;
+    border-left: 2px solid $color_black;
+
+}
+.sssssssssssss {
+    transform: translateX(0);
+}
+/* === /tabs mobile ===  */
+
+
+
+
 //tabs item
 .menu__tabs-item {
-    display: none;
+    display           : none;
     /* display        : flex; */
-    justify-content: center;
-    margin-top     : 50px;
+    justify-content   : center;
+    margin-top        : 50px;
+
     // active class after click
     &--active {
         display: flex;

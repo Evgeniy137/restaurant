@@ -252,9 +252,9 @@
     <div class="booking__form">
         <div class="form__title">BOOK A TABLE</div>
         <form class="form__item" id="form-booking" name="form-booking">
-            <input required type="text" pattern="[A-Za-z]" placeholder="Enter your name" name="Name">
+            <input required type="text" pattern="^[!@#$%^&*.:;<>?\/\|{}\[\]_+= -]?([\p{L}\d]+[!@#$%^&*.:;<>?/\|{}\[\]_+= -]?)+$" placeholder="Enter your name" name="Name">
             <input required type="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Enter your email" name="Email">
-            <input required type="tel" value="+100" pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" placeholder="Enter your phone" name="Phone">
+            <input required type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Enter your phone" name="Phone">
             <input required type="list" placeholder="Enter the number of person" name="People" list="People">
             <datalist id="People">
                 <option>1</option>
@@ -284,7 +284,7 @@
 
 
 <div class="booking-popup">
-    <div class="booking-popup__container booking-popup__container-active ">
+    <div class="booking-popup__container  ">
         <div class="booking-popup__container-title">
             BOOK A TABLE
         </div>
@@ -302,14 +302,27 @@
             <div class="booking-popup__key">
 
             </div>
+            <div class="booking-popup__icon">
+                <svg class="down-btn__circle--svg">
+                    <use xlink:href="./image/sprite.svg#check"></use>
+                </svg>
+            </div>
+
         </div>
         <div class="booking-popup__banner-done">
             THE RESERVATION DONE
         </div>
+        <div class="booking-popup__close">
+            <svg class="down-btn__circle--svg">
+                <use xlink:href="./image/sprite.svg#times-solid"></use>
+            </svg>
+        </div>
     </div>
-    <div class="booking-popup__close">
-        dddddd
-    </div>
+    <!-- <div class="booking-popup__close">
+        <svg class="down-btn__circle--svg">
+            <use xlink:href="./image/sprite.svg#times-solid"></use>
+        </svg>
+    </div> -->
 </div>
     </section>
 </section>
@@ -443,9 +456,9 @@
 </div>
 <div class="menu__sub-title">
     <h3>
-        Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. 
-        Duis at velit maximus, 
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+        Duis at velit maximus,
         molestie est a, tempor magna.
     </h3>
 </div>
@@ -458,6 +471,18 @@
         <button class="tabs__button" data-tab="#wine">WINE</button>
         <button class="tabs__button" data-tab="#beer">BEER</button>
         <button class="tabs__button" data-tab="#drinks">DRINKS</button>
+    </div>
+    <div class="menu__tabs-mobile">
+        <button class="tabs__open-mobile">MENU</button>
+        <div class="tabs__button-mobile">
+            <button class="tabs__button tabs__button--active" data-tab="#soupe">SOUPE</button>
+            <button class="tabs__button" data-tab="#pizza">PIZZA</button>
+            <button class="tabs__button" data-tab="#pasta">PASTA</button>
+            <button class="tabs__button" data-tab="#desert">DESERT</button>
+            <button class="tabs__button" data-tab="#wine">WINE</button>
+            <button class="tabs__button" data-tab="#beer">BEER</button>
+            <button class="tabs__button" data-tab="#drinks">DRINKS</button>
+        </div>
     </div>
     <!-- item soupe -->
     <div class="menu__tabs-item menu__tabs-item--active" id="soupe">

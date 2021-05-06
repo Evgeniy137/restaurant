@@ -1,6 +1,8 @@
 /* === tabs === */
 const menuTabsButton = document.querySelectorAll(".tabs__button")
-const menuTabsItem =document.querySelectorAll(".menu__tabs-item")
+const menuTabsItem = document.querySelectorAll(".menu__tabs-item")
+const mobileOpenButton = document.querySelector(".tabs__open-mobile")
+const mobileTansItem = document.querySelector(".tabs__button-mobile")
 
 
 menuTabsButton.forEach(function(item) {
@@ -26,7 +28,15 @@ menuTabsButton.forEach(function(item) {
         currentTabsContent.classList.add("menu__tabs-item--active")
     })
 })
+
 /* === / tabs === */   
+
+/* === mobile tabs === */
+mobileOpenButton.addEventListener("click", function() {
+    let mobileTansItem = document.querySelector(".tabs__button-mobile")
+    mobileTansItem.classList.toggle("sssssssssssss")
+})
+/* === / mobile tabs === */
 
 
 

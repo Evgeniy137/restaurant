@@ -42,30 +42,6 @@ buttonOpenPopup.addEventListener("click", (e) => {
     }
 
 
-
-
-    // form validate
-    //const nameValidRegular = "/аб*/g";
-    /* const phineValidRegular = "1"
-    const mailValidRegular = "^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$";
-    let gg = formData.Name;
-    let arr;
-    function valid() {
-        arr = nameValidRegular.exec(gg);
-        console.log(arr)
-    }
-    valid()
-    if (arr == null) {
-        console.log(arr)
-        return false;
-    }  */
-        
-    
-
-
-
-
-
     popupContainer.insertAdjacentHTML('afterbegin',
     `
     <ul class="booking-popup__key--property">
@@ -79,7 +55,6 @@ buttonOpenPopup.addEventListener("click", (e) => {
     `
     )
     bookingPopupWrapper.style.display = "block"; // open popup
-
     
 })
 
